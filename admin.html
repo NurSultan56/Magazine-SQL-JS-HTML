@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .change-container {
+          display: none;
+          position: fixed;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          width: 100%;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+        }
+  
+        .change-container form {
+          border: 2px solid black;
+          padding: 20px;
+          background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="add">
+            <input type="text" id="goodsName" required/>
+            <input type="text" id="goodsDescription" required/>
+            <input type="text" id="storeName" required/>
+            <input type="text" id="storeAdress" required/>
+            <input type="text" id="goodsPrice" required/>
+            <input type="text" id="goodsCount" required/>
+            <button type="submit" id="add">SEND</button>
+        </form>
+
+        <ul id="list"></ul>
+
+        <div style="display: none;" class="change-container">
+            <form >
+                <input type="text" id="goodsNameChange" />
+                <input type="text" id="goodsDescriptionChange" />
+                <input type="text" id="storeNameChange" />
+                <input type="text" id="storeAdressChange" />
+                <input type="text" id="goodsPriceChange" />
+                <input type="text" id="goodsCountChange" />
+                <button type="submit" >CHANGE</button>
+            </form>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
